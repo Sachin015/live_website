@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: white;
+    position: sticky;
+    
+}
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: black;
+    color: white;
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* content part  */
+.main{
+    background: url(./images/background.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding
+}
+
+.main span{
+    color: red;
+    font-weight:500;
+} 
+
+.main h3{
+    font-size: 4.4rem;
+}
+.main h6{
+    font-size: 2rem;
+}
+.main input{
+    margin-top: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+
+
+.card:hover{
+    
+    transition: transform ease-out 0.5s;
+    transform:scale(1.10);
+    background-color: rgba(212, 226, 226, 0.476);
+}
+.card img{
+    height: 200px;
+}
+
+
+
+
+
+.carousel img{
+    width: 1000px !important;
+    height: 600px;
+    margin: auto;
+
+}
+
+
+
+
+
+.list-group li{
+    padding: 10px;
+}
+.list-group li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.list-group li a:hover{
+    color: rgb(239, 83, 83);
+    transition: transform ease-out 2.5s;
+    transform: scale(2);
+}
+
+
+
+
+
+
+
