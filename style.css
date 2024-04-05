@@ -111,6 +111,99 @@
 
 /* -----------------media--query-------------- */
 
+@media only screen and (max-width:559px)and (min-width:300px){
+    .navbar-brand{
+     margin-right: auto;
+     padding: 0 0 0 30px;
+    }
+    .side-bar{
+        /* display: none; */
+        list-style: none;
+        margin-top: 20px;
+        position: absolute;
+        right:40px;
+        top: 0px;
+    }
+    .side-bar a{
+        color: black;
+        font-size: 1.25rem;
+    }
+    nav .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    nav .navbar-nav{
+        display: none;
+        align-self: flex-end;
+        position: relative;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .navbar-nav .nav-link{
+        padding: 15px 0px;
+    }
+    .main{
+        transform: translateX(20%);
+    }
+    .main h3{
+        font-size:0.25rem;
+    }
+    .main h6{
+        font-size:0.25rem;
+    }
+    .main .btn{
+       font-size: 0.79rem;
+    }
+    .main-footer .col-4{
+        width: 50%;
+    }
+    .main-footer .col-8{
+        width: 50%;
+    }
+
+    .cards{
+       transform: translateX(25%);
+    }
+    .cards #card-1{
+        width: 100%;
+    }
+    .cards #card-2{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards #card-3{
+        width:100%;
+        margin-top: 30px;
+    }
+    .cards #card-4{
+        width:100%;
+        margin-top: 30px;
+    }
+    .main-footer .btn{
+        margin-top: 10px;
+    }
+    #about-me{
+        transform: translateX(15%);
+    }
+
+    .carousel{
+        transform: translateX(6%);
+    }
+    #footer{
+        transform: translateX(10%);
+    }
+    #main-1{
+        width: 100%;
+    }
+    #main-2{
+        width: 100%;
+    }
+}
+
+
+
 /* -------extra small --------- */
 @media only screen and (max-width:600px){
     
