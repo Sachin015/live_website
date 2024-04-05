@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+    <!-- ---------font-awesome-link---------- -->
+    <script src="https://kit.fontawesome.com/faff85eac9.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,8 +27,9 @@
         <div class="container">
 
             <a class="navbar-brand text-danger " href="#landing-page">logo</a>
-         
-                <ul class="navbar-nav ">
+                    <li class="side-bar show" onclick="show()"><a href=""> <i class="fa fa-bars"></i></a></li>
+                <ul class="navbar-nav show-sidebar">
+                    <li class="side-bar hide" onclick="hide()"><a href=""> <i class="fa fa-times"></i></a></li>
                     <li class="nav-item px-3">
                         <a class="nav-link active rounded"  href="#landing-page">Home</a>
                     </li>
@@ -44,9 +49,9 @@
     </nav>
 
 <!-- this is for section one part  -->
-    <section class="main py-5  py-sm-1" id="landing-page">
+    <section class="main py-5 " id="landing-page">
         <div class="container">
-            <div class="row py-5 py-sm-1">
+            <div class="row py-5">
                 <div class="col-xl-6 py-5 col-sm-4">
                     <h3 class="font-sm-1"><small>Hello I'm </small> <br>
                        <span>SACHIN MALI</span> 
@@ -82,7 +87,7 @@
 <section class="cards">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-sm-6 " id="card-1">
+            <div class="col-xl-3 col-lg-6 col-sm-6 col-md-6 " id="card-1">
                 <div class="card" style="width: 15rem;">
                     <img src="./cards/graphic-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -92,7 +97,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-3 col-sm-6" id="card-2">
+            <div class="col-xl-3 col-lg-6 col-sm-6 col-md-6" id="card-2">
                 <div class="card" style="width: 15rem;">
                     <img src="./cards/web-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -102,7 +107,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mt-sm-4 " id="card-3">
+            <div class="col-xl-3 col-lg-6 col-sm-6 col-md-6 mt-sm-4 " id="card-3">
                 <div class="card" style="width: 15rem;">
                     <img src="./cards/mobile-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -112,7 +117,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mt-sm-4" id="card-4">
+            <div class="col-xl-3 col-lg-6 col-sm-6 col-md-6 mt-sm-4" id="card-4">
                 <div class="card " style="width: 15rem;">
                     <img src="./cards/video-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -223,6 +228,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
 
 </body>
 

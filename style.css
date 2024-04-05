@@ -26,11 +26,19 @@
     color: black;
     cursor: pointer;
 }
+.side-bar{
+    /* display: none; */
+    list-style: none;
+}
+.side-bar a{
+    color: black;
+    font-size: 1.25rem;
+}
 
 
 /* content part  */
 .main{
-    background: url(./images/background.jpg) no-repeat;
+    background: url(./images/background.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -103,13 +111,45 @@
 
 /* -----------------media--query-------------- */
 
+/* -------extra small --------- */
 @media only screen and (max-width:600px){
+    
+
+    .side-bar{
+        /* display: none; */
+        list-style: none;
+        margin-top: 20px;
+        position: absolute;
+        right:40px;
+        top: 0px;
+    }
+    .side-bar a{
+        color: black;
+        font-size: 1.25rem;
+    }
+    nav .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    nav .navbar-nav{
+        display: none;
+        align-self: flex-end;
+        position: relative;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .navbar-nav .nav-link{
+        padding: 15px 0px;
+    }
     .main{
-        background: url(./images/background.jpg) no-repeat;
-        background-size:cover;
-        width: 100%;
-        height: 100vh;
-        padding: 0;
+        background: url(./images/background.png) no-repeat;
+        background-size:100%;
+        width: 100vw;
+        height: 100%;
+        padding: 0 !important;
+        margin: 0;
     }
     .main h3{
         font-size:2rem;
@@ -135,11 +175,157 @@
     .cards #card-3,#card-4{
         width: 50%;
     }
+    .main-footer .btn{
+        margin-top: 10px;
+    }
 
 } 
 
-
-/* -------------for medium screen ----------- */
-@media only screen and (max-width:600px){
-
+/* -------small size------- */
+@media only screen and (min-width:600px){
+    .side-bar{
+        /* display: none; */
+        list-style: none;
+        margin-top: 20px;
+        position: absolute;
+        right:60px;
+        top: 0px;
+    }
+    .side-bar a{
+        color: black;
+        font-size: 1.25rem;
+    }
+    nav .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    nav .navbar-nav{
+        display: none;
+        align-self: flex-end;
+        position: relative;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .navbar-nav .nav-link{
+        padding: 15px 0px;
+    }
+    .main{
+        background: url(./images/background.png) no-repeat;
+        background-size:100%;
+        width: 100vw;
+        height: 100vh;
+        padding: 0 !important;
+        margin: 0;
+    }
+    .main h3{
+        font-size:2rem;
+    }
+    .main h6{
+        font-size: 1.05rem;
+    }
 }
+
+/* ----------medium-tablet------ */
+@media only screen and (min-width:768px){
+    .side-bar{
+        /* display: none; */
+        list-style: none;
+        margin-top: 20px;
+        position: absolute;
+        right:60px;
+        top: 0px;
+    }
+    .side-bar a{
+        color: black;
+        font-size: 1.25rem;
+    }
+    nav .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    nav .navbar-nav{
+        display: none;
+        align-self: flex-end;
+        position: relative;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .navbar-nav .nav-link{
+        padding: 15px 0px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .side-bar{
+        display: none;
+    }
+    .navbar .navbar-nav{
+        position:absolute;
+        right:0;
+        top: 40;
+       margin: inherit;
+       padding: inherit;
+       
+    }
+    .navbar-brand{
+        position: absolute;
+        left: 100px;
+    }
+    .main span{
+        color: red;
+        font-weight:500;
+    } 
+    
+    .main h3{
+        font-size: 4.4rem;
+    }
+    .main h6{
+        font-size: 2rem;
+    }
+}
+/* ----------self-created-breakpoint----------- */
+@media only screen and (min-width: 993px) {
+    .side-bar{
+        display: none;
+    }
+    .navbar .navbar-nav{
+        display:flex;
+    }
+    .main span{
+        color: red;
+        font-weight:500;
+    } 
+    
+    .main h3{
+        font-size: 4.4rem;
+    }
+    .main h6{
+        font-size: 2rem;
+    }
+
+  }
+
+@media only screen and (min-width:1200px){
+    .side-bar{
+        display: none;
+    }
+    .navbar .navbar-nav{
+        display:flex;
+    }
+    .main span{
+        color: red;
+        font-weight:500;
+    } 
+    
+    .main h3{
+        font-size: 4.4rem;
+    }
+    .main h6{
+        font-size: 2rem;
+    }
+}
+
