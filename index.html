@@ -23,18 +23,20 @@
 
 
 <!-- this is a navigation part  -->
-    <nav class="navbar navbar-expand-lg  text-uppercase ">
+    <nav class="navbar navbar-expand-lg fixed-top text-uppercase ">
         <div class="container" id="nave">
 
             <a class="navbar-brand text-danger " href="#landing-page">logo</a>
-                    <li class="side-bar show" onclick="show()"><a href=""> <i class="fa fa-bars"></i></a></li>
+                    <li class="side-bar" id="bar"><i class="fa fa-bars"></i></li>
                 <ul class="navbar-nav show-sidebar">
-                    <li class="side-bar hide" onclick="hide()"><a href=""> <i class="fa fa-times"></i></a></li>
+
+                    <li class="side" id="times"><i class="fa fa-times"></i></li>
+
                     <li class="nav-item px-3">
                         <a class="nav-link active rounded"  href="#landing-page">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link  px-lg-20px rounded" href="#" >portfolio</a>
+                        <a class="nav-link  px-lg-20px rounded" href="#cards" >portfolio</a>
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link  px-lg-20px rounded" href="#about-me">about me</a>
@@ -42,9 +44,7 @@
                     <li class="nav-item px-3">
                         <a class="nav-link  px-lg-20px rounded" href="#footer">contact</a>
                     </li>
-
                 </ul>
-
             </div>
     </nav>
 
@@ -56,7 +56,7 @@
                     <h3 class="font-sm-1"><small>Hello I'm </small> <br>
                        <span>SACHIN MALI</span> 
                     </h3>
-                    <h6 class=" "> A Web-Devloper</h6>
+                    <h6>A Web-Devloper</h6>
                     <input type="button" value="Hire Me" class="btn btn-danger px-4 ">
                     <input type="button" value="My Project" class="btn btn-outline-dark">
                 </div>
@@ -84,7 +84,7 @@
 </section>
 
 
-<section class="cards">
+<section class="cards" id="cards">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-6 col-sm-6 col-md-6 " id="card-1">
@@ -229,7 +229,21 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-        <script src="script.js"></script>
+       
+       
+<script>
+            let togglehide = document.querySelector("#times");
+
+let toggleshow = document.querySelector("#bars");
+const sidebar = document.querySelector(".navbar-nav");
+
+
+toggleshow.addEventListener("click",function(){
+    // sidebar.style.display = "block"
+    console.log(`hello`);
+})
+
+        </script>
 
 </body>
 

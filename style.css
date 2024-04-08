@@ -29,10 +29,13 @@
 .side-bar{
     /* display: none; */
     list-style: none;
-}
-.side-bar a{
+    cursor: pointer;
     color: black;
     font-size: 1.25rem;
+    padding: 0 10px;
+}
+.side-bar:hover{
+    background-color: rgba(0, 0, 0, 0.179);
 }
 
 
@@ -145,16 +148,21 @@
         padding: 15px 0px;
     }
     .main{
-        transform: translateX(20%);
+        transform: translateX(15%);
+        height: 100vh;
+        width: 100vw;
     }
-    .main h3{
-        font-size:0.25rem;
+    .main small{
+        font-size:1rem;
+    }
+    .main span{
+        font-size:1.30rem;
     }
     .main h6{
-        font-size:0.25rem;
+        font-size:2rem;
     }
     .main .btn{
-       font-size: 0.79rem;
+       font-size: 0.15rem;
     }
     .main-footer .col-4{
         width: 50%;
@@ -206,7 +214,10 @@
 
 /* -------extra small --------- */
 @media only screen and (max-width:600px){
-    
+    .navbar-brand{
+        margin-right: auto;
+        padding: 0 0 0 30px;
+       }
 
     .side-bar{
         /* display: none; */
@@ -276,6 +287,10 @@
 
 /* -------small size------- */
 @media only screen and (min-width:600px){
+    .navbar-brand{
+        margin-right: auto;
+        padding: 0 0 0 30px;
+       }
     .side-bar{
         /* display: none; */
         list-style: none;
@@ -353,7 +368,7 @@
 }
 
 @media only screen and (min-width:992px){
-    .side-bar{
+    .side-bar,#times{
         display: none;
     }
     .navbar .navbar-nav{
@@ -382,7 +397,7 @@
 }
 /* ----------self-created-breakpoint----------- */
 @media only screen and (min-width: 993px) {
-    .side-bar{
+    .side-bar,#times{
         display: none;
     }
     .navbar .navbar-nav{
@@ -403,7 +418,7 @@
   }
 
 @media only screen and (min-width:1200px){
-    .side-bar{
+    .side-bar,#times{
         display: none;
     }
     .navbar .navbar-nav{
