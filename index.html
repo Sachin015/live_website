@@ -27,10 +27,10 @@
         <div class="container" id="nave">
 
             <a class="navbar-brand text-danger " href="#landing-page">logo</a>
-                    <li class="side-bar" id="bar"><i class="fa fa-bars"></i></li>
+                    <li class="side-bar" id="bar"><i class="fa fa-bars" onclick="show()"></i></li>
                 <ul class="navbar-nav show-sidebar">
 
-                    <li class="side" id="times"><i class="fa fa-times"></i></li>
+                    <li class="side" id="times"><i class="fa fa-times" onclick="hide()"></i></li>
 
                     <li class="nav-item px-3">
                         <a class="nav-link active rounded"  href="#landing-page">Home</a>
@@ -232,16 +232,18 @@
        
        
 <script>
-            let togglehide = document.querySelector("#times");
-
-let toggleshow = document.querySelector("#bars");
-const sidebar = document.querySelector(".navbar-nav");
-
-
-toggleshow.addEventListener("click",function(){
-    // sidebar.style.display = "block"
-    console.log(`hello`);
-})
+    function show (){
+        const side = document.querySelector(".navbar-nav");
+        side.style.display="block"
+    const bar = document.querySelector("#bar")
+    bar.style.display="none"
+    }
+    function hide(){
+        const side = document.querySelector(".navbar-nav");
+        side.style.display="none"
+        const bar = document.querySelector("#bar")
+    bar.style.display="block"
+    }
 
         </script>
 

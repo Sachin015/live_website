@@ -120,16 +120,11 @@
      padding: 0 0 0 30px;
     }
     .side-bar{
-        /* display: none; */
         list-style: none;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         position: absolute;
-        right:40px;
-        top: 0px;
-    }
-    .side-bar a{
-        color: black;
-        font-size: 1.25rem;
+        right:0 !important;
+        top: 0;
     }
     nav .container{
         display: flex;
@@ -140,7 +135,6 @@
     nav .navbar-nav{
         display: none;
         align-self: flex-end;
-        position: relative;
         margin-top: 40px;
         text-align: center;
     }
@@ -149,8 +143,9 @@
     }
     .main{
         transform: translateX(15%);
-        height: 100vh;
+        height:200px !important;
         width: 100vw;
+        margin: 0 !important;
     }
     .main small{
         font-size:1rem;
@@ -238,7 +233,6 @@
         
     }
     nav .navbar-nav{
-        display: none;
         align-self: flex-end;
         position: relative;
         margin-top: 40px;
